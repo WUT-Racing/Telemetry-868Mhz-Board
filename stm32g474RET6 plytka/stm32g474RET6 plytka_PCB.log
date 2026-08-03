@@ -1,0 +1,42 @@
+﻿INFO-
+INFO-		Unigraphics Version NX V2007 to AutoCAD 2004
+INFO-		
+INFO-
+INFO-		Running UGTODXF Translator .....
+INFO-
+INFO-		Start of Translation: Wed Apr 22 17:37:50 2026
+INFO-
+STATUS-		Converting C:\Users\Robert\Downloads\stm32g474RET6 plytka\stm32g474RET6 plytka_PCB.prt
+STATUS-
+SUMMARY-
+SUMMARY-	Summary of Unigraphics Input Entities
+SUMMARY-	For Unigraphics File: C:\Users\Robert\Downloads\stm32g474RET6 plytka\stm32g474RET6 plytka_PCB.prt
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Entity Type					Count
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Line .....................................:	73
+SUMMARY-	Point ....................................:	3
+SUMMARY-	Circle ...................................:	134
+SUMMARY-	Solid Edges............................:	207
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Total ....................................:	417
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-
+STATUS-
+INFO-
+INFO-		Writing File: C:\Users\Robert\Downloads\stm32g474RET6 plytka\stm32g474RET6 plytka_PCB.dxf
+SUMMARY-	Summary of AutoCAD Output Entities
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Entity Type					Count
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Circle ...................................:	134
+SUMMARY-	Point ....................................:	3
+SUMMARY-	Line .....................................:	73
+SUMMARY-	Layout ...................................:	6
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Total ....................................:	216
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-
+INFO-
+INFO-		End of Translation: Wed Apr 22 17:37:51 2026
+INFO-		Translation CPU time: 0 m, 0 sINFO-

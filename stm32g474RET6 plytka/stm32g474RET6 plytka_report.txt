@@ -1,0 +1,56 @@
+Raport statystyczny PCB
+=====================
+- Data: 20.04.2026 15:47:55
+- Projekt: stm32g474RET6 plytka
+- Nazwa płytki: stm32g474RET6 plytka
+
+Płytka
+-----
+- Szerokość: 73,5000 mm
+- Wysokość: 39,0000 mm
+- Obszar: 2866,50 mm²
+- Górna warstwa miedzi: 401,777 mm²
+- Dolna warstwa miedzi: 308,949 mm²
+- Min track clearance: 0,2000 mm
+- Min track width: 0,2000 mm
+- Minimalna średnica otworu: 0,3000 mm
+- Grubość stosu warstw płytki: 1,6000 mm
+
+- Front footprint area: 664,474 mm²
+- Back footprint area: 994,743 mm²
+- Front component density: 23,18 %
+- Zagęszczenie elementów po stronie dolnej: 34,70 %
+Pola lutownicze
+----
+- Do montażu przewlekanego: 4
+- SMD: 314
+- Złącze: 0
+- NPTH: 0
+- Kastelacja: 0
+- Na wcisk: 0
+
+Przelotki
+----
+- Przelotek na wylot: 57
+- Blind vias: 0
+- Przelotek zagrzebanych: 0
+- Mikroprzelotek: 0
+
+Komponenty
+----------
+
+|               | Strona górna | Strona dolna | W sumie |
+|---------------|--------------|--------------|---------|
+|THT:           |            2 |            0 |       2 |
+|SMD:           |           34 |           19 |      53 |
+|Nieokreślony:  |            0 |            0 |       0 |
+|W sumie:       |           36 |           19 |      55 |
+
+Otwory wiercone
+-----------
+
+| Liczba |     Kształt | Rozmiar X | Rozmiar Y | Pokryte | Przelotka/Pole lut | Początkowa warstwa | Warstwa blokująca |
+|--------|-------------|-----------|-----------|---------|--------------------|--------------------|-------------------|
+|     39 | Zaokrąglony | 0,3000 mm | 0,3000 mm |     PTH |          Przelotka |               F.Cu |              B.Cu |
+|     18 | Zaokrąglony | 0,5000 mm | 0,5000 mm |     PTH |          Przelotka |               F.Cu |              B.Cu |
+|      4 | Zaokrąglony | 1,0000 mm | 1,0000 mm |     PTH |    Pole lutownicze |               F.Cu |              B.Cu |
