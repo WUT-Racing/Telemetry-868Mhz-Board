@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -60,20 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "clearance|255235452|128680000|26dffdf5-72df-4bf7-8914-7f996fdeddc9|fc408ef5-b6b5-4665-bb57-e1e839229d96",
-          ""
-        ],
-        [
-          "shorting_items|255485952|128354500|fc408ef5-b6b5-4665-bb57-e1e839229d96|8d268333-d4e3-4f4d-b2f4-73f81d66b987",
-          ""
-        ],
-        [
-          "solder_mask_bridge|255485952|128354500|fc408ef5-b6b5-4665-bb57-e1e839229d96|8d268333-d4e3-4f4d-b2f4-73f81d66b987",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -469,6 +472,7 @@
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
+      "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
       "isolated_pin_label": "warning",
@@ -529,17 +533,60 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
+        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.5,
+        "name": "CAN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2027,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.0,
+        "name": "X",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "CAN",
+        "pattern": "/CAN_1_N"
+      },
+      {
+        "netclass": "CAN",
+        "pattern": "/CAN_1_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "CAN",
+        "pattern": "/CAN_2_P"
+      },
+      {
+        "netclass": "CAN",
+        "pattern": "/CAN_2_N"
+      },
+      {
+        "netclass": "CAN",
+        "pattern": "/CAN_1_Term"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -709,9 +756,17 @@
     "meta": {
       "version": 1
     },
+    "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
+    "space_save_all_events": true,
+    "spice_current_sheet_as_root": false,
+    "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_dissipations": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
     "top_level_sheets": [
@@ -721,13 +776,22 @@
         "uuid": "abad8f02-9b6d-448b-bfa4-eedc3e540e65"
       }
     ],
-    "used_designators": "S1-2",
-    "variants": []
+    "used_designators": "5V1,C1-25,S1-2,R1-24,IC1-5,J1-5,#PWR1-85,GND1,12V1,PS1,RX1,H1-6,D1-6,TP1-9,3.3V1,CAN1H1,CAN1L1,CAN2H1,CAN2L1,TX1,JP1-2,SW1-3",
+    "variants": [
+      {
+        "description": "new connectors, used rules of good enginnering",
+        "name": "2.0"
+      }
+    ]
   },
   "sheets": [
     [
       "abad8f02-9b6d-448b-bfa4-eedc3e540e65",
       "Główny"
+    ],
+    [
+      "c7b160af-b5ff-43fa-8833-ab25fd8d6bbd",
+      "Power Distribution"
     ]
   ],
   "text_variables": {},
